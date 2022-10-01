@@ -23,10 +23,10 @@ public class JavaApplication2 {
             pilih = sc.nextInt();
 
             if(pilih == 1){
-                //Masukan Order
                 listPesan = beli(listPesan);
-            }else if(pilih==2){
-                //Tampilkan Order
+            }
+            else if(pilih==2){
+                
                 listPesan = bayar(listPesan);
                 if(totBayar > 0){
                     System.out.println("Bayar:");
@@ -39,7 +39,8 @@ public class JavaApplication2 {
                         }while (jmlUang < totBayar);
 
                         System.out.println("Kembalian : "+(jmlUang-totBayar));
-                    }else{
+                    }
+                    else{
                         System.out.println("Kembalian : "+(jmlUang-totBayar));
                     }
                     listPesan.clear();
